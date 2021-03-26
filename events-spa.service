@@ -1,0 +1,15 @@
+[Unit]
+Description=Events Spa
+
+[Service]
+Type=simple
+User=events-spa
+Group=events-spa
+Restart=on-failure
+Environment=LANG=en_US.UTF-8
+
+WorkingDirectory=/home/events-spa/events-spa/server
+ExecStart=/bin/bash /home/events-spa/vents-spa/server/start.sh
+
+[Install]
+WantedBy=multi-user.target

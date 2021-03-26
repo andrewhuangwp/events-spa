@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name events-spa.normalwebsite.art www.events-spa.normalwebsite.art;
+    index index.html;
+
+    location / {
+      root /home/events-spa/events-spa/web-ui/public;
+    }
+
+    location /api/v1/ {
+        proxy_pass http://localhost:5776;
+    }
+
+}
