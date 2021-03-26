@@ -8,9 +8,9 @@ export DATABASE_URL=ecto://events_app:iekey1Sohx5c@localhost:5432/events_spa_pro
 
 echo "Stopping old copy of app, if any..."
 
-_build/prod/rel/events_app/bin/events_app stop || true
+_build/prod/rel/events_spa/bin/events_spa stop || true
 
 echo "Starting app..."
 
 export PORT=5776
-_build/prod/rel/events_app/bin/events_app start
+_build/prod/rel/events_spa/bin/events_spa start
