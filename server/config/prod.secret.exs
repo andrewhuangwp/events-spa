@@ -35,7 +35,7 @@ config :events_spa, EventsSpaWeb.Endpoint,
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start each relevant endpoint:
 #
-#     config :events_spa, EventsSpaWeb.Endpoint, server: true
+config :events_spa, EventsSpaWeb.Endpoint, server: true
 #
 # Then you can assemble a release by calling `mix release`.
 # See `mix help release` for more information.
